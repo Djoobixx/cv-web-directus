@@ -1,0 +1,26 @@
+# Configuration VPS Hostinger
+DB_CLIENT=mysql2
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=directus_cv
+DB_USER=directus_user
+DB_PASSWORD=votre_mot_de_passe_fort
+
+# Configuration Directus
+KEY=your-secret-key-here
+SECRET=your-secret-here
+
+# URLs
+PUBLIC_URL=https://api.jordan-matias.fr
+CORS_ENABLED=true
+CORS_ORIGIN=true
+
+# Admin
+ADMIN_EMAIL=admin@jordan-matias.fr
+ADMIN_PASSWORD=your-admin-password
+
+# Port
+PORT=3000
+
+# Configuration PM2
+NODE_ENV=production

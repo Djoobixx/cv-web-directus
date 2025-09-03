@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: directus-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npx directus start
+    envVars:
+      - key: DB_CLIENT
+        value: postgres
+      - key: DB_HOST
+        value: ${{DB_HOST}}
+      - key: DB_PORT
+        value: ${{DB_PORT}}
+      - key: DB_DATABASE
+        value: ${{DB_DATABASE}}
+      - key: DB_USER
+        value: ${{DB_USER}}
+      - key: DB_PASSWORD
+        value: ${{DB_PASSWORD}}
+      - key: KEY
+        value: ${{KEY}}
+      - key: SECRET
+        value: ${{SECRET}}
+      - key: PUBLIC_URL
+        value: ${{PUBLIC_URL}}
+      - key: CORS_ENABLED
+        value: true
+      - key: CORS_ORIGIN
+        value: true
+      - key: ADMIN_EMAIL
+        value: ${{ADMIN_EMAIL}}
+      - key: ADMIN_PASSWORD
+        value: ${{ADMIN_PASSWORD}}
+      - key: NODE_ENV
+        value: production
+
+databases:
+  - name: directus-db
+    plan: free
+    databaseName: directus_cv
