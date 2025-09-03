@@ -4,6 +4,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Directus specific
+directus-cms/node_modules/
+directus-cms/uploads/
+directus-cms/extensions/
+directus-cms/.env
+directus-cms/directus.log
+
 # Production builds
 cv-web/build/
 directus-cms/uploads/
